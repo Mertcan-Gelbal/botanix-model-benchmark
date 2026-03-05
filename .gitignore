@@ -1,0 +1,26 @@
+# Dataset ve büyük dosyalar
+data/
+plantclef/
+Archive.zip
+*.tar
+*.zip
+
+# Model ağırlıkları (büyük — ayrıca Kaggle'a yükle)
+checkpoints/
+*.pth
+*.pt
+
+# Sonuçlar (eğitim bittikten sonra ayrıca push edilecek)
+# results/ klasörü push edilecek, şimdilik dışarıda
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
