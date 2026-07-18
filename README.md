@@ -13,7 +13,7 @@ Answer four questions on a single fixed dataset and protocol:
 1. **CNN vs. Transformer** — which family wins on leaf-disease classification?
 2. **Segmentation-head effect** — does a self-supervised attention/segmentation head improve classification?
 3. **Transfer learning effect** — how much do ImageNet-pretrained weights help vs. training from scratch?
-4. **Compute efficiency** — which model is viable for mobile/edge deployment (feeds [Botanix mobile](https://github.com/Mertcan-Gelbal/Bitki-Hastaliklarinin-Tespitine-Yonelik-Derin-Ogrenme-Tabanli-Mobil-Uygulama-Gelistirilmesi))?
+4. **Compute efficiency** — which model is viable for mobile/edge deployment (feeds [Botanix mobile](https://github.com/Mertcan-Gelbal/botanix-mobile-ai))?
 
 ## Dataset
 
@@ -29,7 +29,7 @@ Author-published dataset: [Plant Leaf Disease Classification Dataset (Kaggle)](h
 | Total | ~374,511 |
 | Image size | 256×256 → 224×224 (model input), RGB, JPEG |
 
-> These counts are reported by the dataset author and are consistent across the notebooks, but are not independently re-derived here. **Class-count discrepancy to confirm:** the exported artifacts in [botanix-training](https://github.com/Mertcan-Gelbal/botanix-training) list **109** classes (`labels.json`) while this benchmark uses **105**. This is most likely a dataset-version difference. **TODO: confirm and reconcile the two class sets.**
+> These counts are reported by the dataset author and are consistent across the notebooks, but are not independently re-derived here. **Class-count discrepancy to confirm:** the exported artifacts in [botanix-training](https://github.com/Mertcan-Gelbal/botanix-model-artifacts) list **109** classes (`labels.json`) while this benchmark uses **105**. This is most likely a dataset-version difference. **TODO: confirm and reconcile the two class sets.**
 >
 > Duplicate/leakage control across the train/val/test split is **not yet documented**. **TODO: document the de-duplication and split procedure.**
 
@@ -109,8 +109,8 @@ requirements.txt     Python dependencies
 
 ## Related repositories
 
-- [Botanix mobile](https://github.com/Mertcan-Gelbal/Bitki-Hastaliklarinin-Tespitine-Yonelik-Derin-Ogrenme-Tabanli-Mobil-Uygulama-Gelistirilmesi) — the on-device app that consumes the winning architecture
-- [botanix-training](https://github.com/Mertcan-Gelbal/botanix-training) — exported model artifacts
+- [Botanix mobile](https://github.com/Mertcan-Gelbal/botanix-mobile-ai) — the on-device app that consumes the winning architecture
+- [botanix-training](https://github.com/Mertcan-Gelbal/botanix-model-artifacts) — exported model artifacts
 
 ## License
 
