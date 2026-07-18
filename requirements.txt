@@ -1,0 +1,14 @@
+# Botanix Model Benchmark — Python dependencies
+# Install PyTorch matching your CUDA/CPU platform first: https://pytorch.org/get-started/locally/
+torch
+torchvision
+timm
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+Pillow
+kagglehub
+kaggle
+jupyter
